@@ -29,7 +29,7 @@ ggplot(dados, aes(x = altura)) +
   labs(title = "Hist alturas",
        x = "Altura (m)",
        y = "Freq.") +
-  theme_bw() + theme(axis.text=element_text(size=6))
+  theme_bw()
 
 ggplot(dados, aes(x = dap)) +
   geom_histogram(binwidth = 2 * IQR(dados$dap) / length(dados$dap)^(1/3)) +
@@ -43,7 +43,7 @@ ggplot(dados, aes(x = altura)) +
   labs(title = "Hist p/ talhao",
        x = "Altura (m)",
        y = "Freq.") + facet_wrap(~id) +
-  theme_bw() + theme(axis.text=element_text(size=6))
+  theme_bw()
 
 
 #### 1A FUNCAO: SIMULAR DADOS COM BASE EMPIRICA ####
