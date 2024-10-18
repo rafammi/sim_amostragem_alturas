@@ -6,6 +6,7 @@ library(dplyr)
 set.seed(123)
 
 ## carregar dados
+setwd(dirname(rstudioapi::getSourceEditorContext()$path))
 dados<-read.csv('teste.csv')
 
 #### PLOTAR DADOS ####
